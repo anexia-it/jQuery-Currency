@@ -153,7 +153,7 @@
                 if (bc == 'VEF') currency_before = 'VEF';
                 if (bc == 'ZWD') currency_before = 'ZWD';
                 
-                if (currency_before != '') currency_before += ' ';
+                if (currency_before != '') currency_before += '&nbsp;';
                 var output = '';
 
                 if (!settings.hidePrefix) output += currency_before;
