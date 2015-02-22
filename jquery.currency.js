@@ -152,14 +152,10 @@
                 if (bc == 'UYU') currency_before = 'UYU';
                 if (bc == 'VEF') currency_before = 'VEF';
                 if (bc == 'ZWD') currency_before = 'ZWD';
-                if (currency_before == '' && currency_after == '') {
-                    currency_before = '';
-                } else {
-                    currency_before += ' ';
-                }
+                
+                if (currency_before != '') currency_before += ' ';
                 var output = '';
 
-                
                 if (!settings.hidePrefix) output += currency_before;
                 output += helpers.number_format(amount, settings.decimals, settings.decimal, settings.thousands);
 
